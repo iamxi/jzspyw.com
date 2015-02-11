@@ -3,8 +3,124 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>鉴珍尚品燕窝</title>
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/css/foundation.min.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/css/foundation-icons.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/css/idangerous.swiper.css">
+    <script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/foundation.min.js"></script>
+    <script type="text/javascript" src="/static/js/idangerous.swiper.min.js"></script>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .swiper-container, .swiper-slide {
+            width: 100%;
+            height: 700px;
+        }
+        .pagination{position:fixed;z-index:20;right:20px;top:50%;}
+        .swiper-pagination-switch{display:block;width:10px;height:10px;border-radius:10px;background:#555;margin:0 0px 7px;opacity:0.8;border:1px solid #fff;cursor:pointer;}
+        .swiper-active-switch{background:#fff;}
+
+        .product-main {
+            padding: 12rem 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: #00b5ad;
+            background-image: radial-gradient(farthest-corner, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.95));
+        }
+        .product-main h1 {
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.2;
+            font-size: 3em;
+        }
+        .product-main .product-name {
+            color: #ffffff;
+            font-size: 1.75em;
+            font-weight: bold;
+            display: block;
+        }
+        .product-main .product-subname {
+            font-weight: 300;
+        }
+        .product-main .button {
+            color: #ffffff;
+            font-size: 1.42857rem;
+            line-height: 1;
+            background: transparent;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5) inset !important;
+            transition: box-shadow 0.1s ease 0s, color 0.1s ease 0s;
+        }
+        .product-main .button:hover {
+            color: #6dffff;
+            box-shadow: 0 0 0 2px #6dffff inset !important;
+        }
+        .product-main .div-hr {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            #border-color: transparent !important;
+            margin: 1rem 0;
+        }
+    </style>
 </head>
 <body>
-<h1>鉴珍尚品燕窝 欢迎您！</h1>
+    <div class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">鉴珍尚品燕窝</a></h1>
+            </li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="right">
+                <li class="has-form">
+                    <a target="_blank" href="http://item.taobao.com/item.htm?_u=bkcde38238&id=43423446518" class="button">
+                        购买
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-main">
+                        <h1>
+                            <span class="product-name">鉴珍尚品</span>
+                            <span class="product-subname">来自印尼的纯天然燕窝</span>
+                        </h1>
+                        <div class="div-hr"></div>
+                        <a class="button" target="_blank" href="http://item.taobao.com/item.htm?_u=bkcde38238&id=43423446518">
+                            马上购买
+                            <i class="fi-shopping-cart medium"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <h1>b</h1>
+                </div>
+                <div class="swiper-slide">
+                    <h1>c</h1>
+                </div>
+          </div>
+            <div class="pagination">
+                <span class="swiper-pagination-switch"></span>
+                <span class="swiper-pagination-switch"></span>
+                <span class="swiper-pagination-switch"></span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            var mySwiper = $('.swiper-container').swiper({
+                mode: 'vertical',
+                pagination: '.pagination',
+                paginationClickable: true,
+                mousewheelControl: true,
+                updateFormElements: true,
+            });
+        })
+    </script>
 </body>
 </html>
