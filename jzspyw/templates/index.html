@@ -13,57 +13,83 @@
     <script type="text/javascript" src="/static/js/idangerous.swiper.min.js"></script>
 </head>
 <body>
-    <div class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-            <li class="name">
-                <h1><a href="#">鉴珍尚品燕窝</a></h1>
-            </li>
-        </ul>
+    <div class="off-canvas-wrap" data-offcanvas="">
+        <div class="inner-wrap">
+            <nav class="top-bar hide-for-small" data-topbar role="navigation">
+                <ul class="title-area">
+                    <li class="name">
+                        <h1><a href="#">鉴珍尚品燕窝</a></h1>
+                    </li>
+                </ul>
+                <section class="top-bar-section">
+                    <ul class="right">
+                        <li class="has-form">
+                            <a target="_blank" href="http://item.taobao.com/item.htm?_u=bkcde38238&id=43423446518" class="button">
+                                购买
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
 
-        <section class="top-bar-section">
-            <ul class="right">
-                <li class="has-form">
-                    <a target="_blank" href="http://item.taobao.com/item.htm?_u=bkcde38238&id=43423446518" class="button">
-                        购买
+            <nav class="tab-bar show-for-small">
+                <section class="left-small">
+                    <a class="left-off-canvas-toggle menu-icon" aria-expanded="false">
+                        <span></span>
                     </a>
-                </li>
-            </ul>
-        </section>
-    </div>
-    <div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="product-main">
-                        <h1>
-                            <span class="product-name">鉴珍尚品</span>
-                            <span class="product-subname">来自印尼的纯天然燕窝</span>
-                        </h1>
-                        <div class="div-hr"></div>
-                        <a class="button" target="_blank" href="http://item.taobao.com/item.htm?_u=bkcde38238&id=43423446518">
-                            马上购买
-                            <i class="fi-shopping-cart medium"></i>
-                        </a>
+                </section>
+                <section class="right tab-bar-section">
+                    <h1 class="title">鉴珍尚品燕窝</h1>
+                </section>
+            </nav>
+            <aside class="left-off-canvas-menu">
+                <ul class="off-canvas-list">
+                    <li>
+                        <label>鉴珍尚品燕窝</label>
+                    </li>
+                    <li>
+                        <a  target="_blank" href="http://item.taobao.com/item.htm?_u=bkcde38238&id=43423446518">购买</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-main">
+                                <h1>
+                                    <span class="product-name">鉴珍尚品</span>
+                                    <span class="product-subname">来自印尼的纯天然燕窝</span>
+                                </h1>
+                                <div class="div-hr"></div>
+                                <a class="button" target="_blank" href="http://item.taobao.com/item.htm?_u=bkcde38238&id=43423446518">
+                                    马上购买
+                                    <i class="fi-shopping-cart medium"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div style="height: 100%;background-color: #ffffff;text-align: center;">
+                                <h1>鉴珍尚品</h1>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div style="height: 100%;background-color: #ffffff;text-align: center;">
+                                <h1>鉴珍尚品</h1>
+                            </div>
+                        </div>
+                  </div>
+                    <div class="pagination">
+                        <span class="swiper-pagination-switch"></span>
+                        <span class="swiper-pagination-switch"></span>
+                        <span class="swiper-pagination-switch"></span>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div style="height: 100%;background-color: #ffffff;text-align: center;">
-                        <h1>鉴珍尚品</h1>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div style="height: 100%;background-color: #ffffff;text-align: center;">
-                        <h1>鉴珍尚品</h1>
-                    </div>
-                </div>
-          </div>
-            <div class="pagination">
-                <span class="swiper-pagination-switch"></span>
-                <span class="swiper-pagination-switch"></span>
-                <span class="swiper-pagination-switch"></span>
             </div>
         </div>
     </div>
+
     <script type="text/javascript">
         $(function(){
             var mySwiper = $('.swiper-container').swiper({
