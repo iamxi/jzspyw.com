@@ -63,16 +63,17 @@ body {
 }
 .product-origin-info {
   padding: 12rem 1.5rem;
-  font-size: 2.2em;
+  font-size: 1.5em;
 }
 .product-origin-info h1 {
   line-height: 1.2;
   font-weight: bold;
+  font-size: 2.2em;
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .product-origin-info {
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
 }
 
@@ -86,11 +87,14 @@ body {
   .product-main .product-name {
     font-size: 1.5em;
   }
-  .product-origin-info {
-    padding: 1rem 0;
-    font-size: 1.5em;
-  }
   .product-origin-map {
     background-image: url(/static/img/origin-m.png);
+  }
+  .product-origin-info {
+    padding: 0 0;
+    font-size: 1em;
+  }
+  .product-origin-info h1 {
+    font-size: 1.5em;
   }
 }
