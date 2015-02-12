@@ -49,6 +49,32 @@ body {
   #border-color: transparent !important;
   margin: 1rem 0;
 }
+.product-origin {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(179, 209, 255, 1);
+}
+.product-origin-map {
+  width: 100%;
+  height: 100%;
+  background-image: url(../static/img/origin.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.product-origin-info {
+  padding: 12rem 1.5rem;
+  font-size: 2.2em;
+}
+.product-origin-info h1 {
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .product-origin-info {
+    padding: 1rem 0;
+  }
+}
 
 @media only screen and (max-width: 40em) {
   .product-main {
@@ -59,5 +85,12 @@ body {
   }
   .product-main .product-name {
     font-size: 1.5em;
+  }
+  .product-origin-info {
+    padding: 1rem 0;
+    font-size: 1.5em;
+  }
+  .product-origin-map {
+    background-image: url(../static/img/origin-m.png);
   }
 }
