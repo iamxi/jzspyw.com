@@ -7,5 +7,6 @@ import cherrypy
 class Index:
 
     @cherrypy.expose
+    @cherrypy.tools.mako(filename="index.html")
     def index(self):
-        return 'hello'
+        return ''
