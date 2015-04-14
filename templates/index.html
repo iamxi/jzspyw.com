@@ -8,11 +8,12 @@
     <title>鉴珍尚品燕窝</title>
     <link type="text/css" rel="stylesheet" media="screen" href="/static/css/foundation.min.css">
     <link type="text/css" rel="stylesheet" media="screen" href="/static/css/foundation-icons.css">
-    <link type="text/css" rel="stylesheet" media="screen" href="/static/css/idangerous.swiper.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/css/swiper.min.css">
     <link type="text/css" rel="stylesheet" media="screen" href="/static/css/custom.css">
     <script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/static/js/foundation.min.js"></script>
-    <script type="text/javascript" src="/static/js/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="/static/js/swiper.jquery.min.js"></script>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -125,11 +126,7 @@
                         <div class="swiper-slide">
                         </div>
                   </div>
-                    <div class="pagination">
-                        <span class="swiper-pagination-switch"></span>
-                        <span class="swiper-pagination-switch"></span>
-                        <span class="swiper-pagination-switch"></span>
-                        <span class="swiper-pagination-switch"></span>
+                    <div class="swiper-pagination">
                     </div>
                 </div>
             </div>
@@ -139,13 +136,18 @@
     <script type="text/javascript">
         $(function(){
             var mySwiper = $('.swiper-container').swiper({
-                mode: 'vertical',
-                pagination: '.pagination',
+                // 水平/垂直
+                direction: 'vertical',
+                // 快速生成内建的分页控制
+                pagination: '.swiper-pagination',
                 paginationClickable: true,
                 mousewheelControl: true,
-                //freeMode: true,
-                //freeModeFluid: true,
-                updateFormElements: true,
+                // 自由模式, 能够让slides 无需定位，就像通常的滑动条
+                freeMode: true,
+                // 释放滑块之后仍会滑动一小会
+                freeModeFluid: true,
+                // 当所有的内嵌图像（img标签）加载完成后Swiper会重新初始化。
+                updateFormElements: true
             });
         })
         $(document).foundation();

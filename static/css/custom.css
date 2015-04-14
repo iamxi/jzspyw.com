@@ -1,13 +1,20 @@
 body {
-  height: 100%;
+    position: relative;
+    height: 100%;
 }
-.swiper-container, .swiper-slide {
+.swiper-container {
   width: 100%;
   height: 100%;
 }
-.pagination{position:fixed;z-index:20;right:20px;top:50%;}
-.swiper-pagination-switch{display:block;width:10px;height:10px;border-radius:10px;background:#555;margin:0 0px 7px;opacity:0.8;border:1px solid #fff;cursor:pointer;}
-.swiper-active-switch{background:#fff;}
+.swiper-pagination {
+    position:fixed;z-index:20;right:20px;top:50%;
+}
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
 
 .product-main {
   padding: 12rem 0;
@@ -98,4 +105,3 @@ body {
     font-size: 1.5em;
   }
 }
-
