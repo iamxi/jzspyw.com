@@ -6,5 +6,7 @@ __author__ = 'iamxi'
 import cherrypy
 import jzspyw.app
 
-cherrypy.config.update({'server.socket_host': '0.0.0.0'})
-cherrypy.quickstart(jzspyw.app.Index())
+cherrypy.config.update('conf/server.cfg')
+cherrypy.tree.mount(jzspyw.app.Index(), '/', 'conf/jzspyw.cfg')
+cherrypy.engine.start()
+cherrypy.engine.block()
