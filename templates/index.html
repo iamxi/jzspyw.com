@@ -34,8 +34,8 @@
     </script>
 </head>
 <body>
-    <div class="off-canvas-wrap" data-offcanvas="">
-        <div class="inner-wrap">
+    <div class="off-canvas-wrap div-full-height" data-offcanvas="">
+        <div class="inner-wrap div-full-height">
             <nav class="top-bar hide-for-small" data-topbar role="navigation">
                 <ul class="title-area">
                     <li class="name">
@@ -74,7 +74,7 @@
                 </ul>
             </aside>
 
-            <div>
+            <div class="div-full-height">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -104,8 +104,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div style="height: 100%;background-color: #ffffff;text-align: center;width: 100%">
-                                <h1 style="margin-top: 5%; margin-bottom: 5%">产品特点</h1>
+                            <div class="product-feature">
+                                <h1 class="product-feature-title">产品特点</h1>
                                 <div class="row">
                                     <div class="medium-4 large-4 columns">
                                         <img src="/static/img/feature-1.png">
@@ -126,8 +126,20 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
+                            <div class="product-approve">
+                                <div class="row">
+                                    <div class="medium-6 large-6 columns">
+                                        <h1 class="product-approve-title">权威认证</h1>
+                                        <p>我们的产品经过<a>CCIC（中国检验认证集团）</a>认证，对“鉴珍尚品燕窝”的燕窝产地、生产加工、包装运输等各工序进行监控管理，秉持鉴别珍品，崇尚品质。</p>
+                                    </div>
+                                    <div class="medium-6 large-6 columns">
+                                        <a href="#" title="点击查看原图"><img src="/static/img/approve.png"></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                  </div>
+                        <div class="swiper-slide"></div>
+                    </div>
                     <div class="swiper-pagination">
                     </div>
                 </div>
@@ -145,9 +157,9 @@
                 paginationClickable: true,
                 mousewheelControl: true,
                 // 自由模式, 能够让slides 无需定位，就像通常的滑动条
-//                freeMode: true,
+                freeMode: true,
                 // 释放滑块之后仍会滑动一小会
-                freeModeFluid: true,
+                freeModeMomentum: true,
                 // 当所有的内嵌图像（img标签）加载完成后Swiper会重新初始化。
                 updateFormElements: true
             });
