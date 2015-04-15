@@ -6,13 +6,14 @@
     <meta content="zh-CN" http-equiv="Content-Language">
     <meta name="baidu-site-verification" content="BoKjsGVT6v" />
     <title>鉴珍尚品燕窝</title>
-    <link type="text/css" rel="stylesheet" media="screen" href="../static/css/foundation.min.css">
-    <link type="text/css" rel="stylesheet" media="screen" href="../static/css/foundation-icons.css">
-    <link type="text/css" rel="stylesheet" media="screen" href="../static/css/idangerous.swiper.css">
-    <link type="text/css" rel="stylesheet" media="screen" href="../static/css/custom.css">
-    <script type="text/javascript" src="../static/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="../static/js/foundation.min.js"></script>
-    <script type="text/javascript" src="../static/js/idangerous.swiper.min.js"></script>
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/css/foundation.min.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/css/foundation-icons.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/css/custom.css">
+    <script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/foundation.min.js"></script>
+    <script type="text/javascript" src="/static/js/swiper.jquery.min.js"></script>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -74,9 +75,7 @@
             </aside>
 
             <div>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <section class="">
                             <div class="product-main">
                                 <h1>
                                     <span class="product-name">鉴珍尚品</span>
@@ -88,48 +87,65 @@
                                     <i class="fi-shopping-cart medium"></i>
                                 </a>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </section>
+                        <section class="main-content">
                             <div class="product-origin">
-                                <div class="product-origin-map">
-                                    <div class="small-6 columns"></div>
-                                    <div class="small-6 columns">
+                                <div class="row">
+                                    <div class="medium-4 large-4 columns">
                                         <div class="product-origin-info">
                                             <h1>产地介绍</h1>
-                                            <div>原材料主要摘于加里曼丹岛的屋燕，这里环境天然，没有空气粉尘、重金属等污染</div>
+                                            <div>原材料主要摘于<a href="#">加里曼丹岛</a>的屋燕，这里环境天然，没有空气粉尘、重金属等污染。</div>
                                         </div>
+                                    </div>
+                                    <div class="medium-8 large-8 columns">
+                                        <img src="/static/img/origin-map.png">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div style="height: 100%;background-color: #ffffff;text-align: center;">
-                                <h1>鉴珍尚品</h1>
+                        </section>
+                        <section class="main-content">
+                            <div class="row product-feature">
+                                <div class="large-12">
+                                    <hr />
+                                    <h1 class="product-feature-title">产品特点</h1>
+                                </div>
+                                <div class="medium-4 large-4 columns">
+                                    <img src="/static/img/feature-1.png">
+                                    <h2>燕窝酸含量高</h2>
+                                    <p>12%的<a href="#">燕窝酸</a>含量，高于优质燕窝的标准。</p>
+                                </div>
+                                <div class="medium-4 large-4 columns">
+                                    <img src="/static/img/feature-2.png">
+                                    <h2>湿法挑毛</h2>
+                                    <p>采用<a href="#">湿法挑毛</a>，清楚杂质的同时大大降低了亚硝酸盐的含量。</p>
+                                </div>
+                                <div class="medium-4 large-4 columns">
+                                    <img src="/static/img/feature-3.png">
+                                    <h2>绿色无污染</h2>
+                                    <p>产地环境天然，无重金属污染，纯手工加工，无漂白。</p>
+                                </div>
                             </div>
-                        </div>
-                  </div>
-                    <div class="pagination">
-                        <span class="swiper-pagination-switch"></span>
-                        <span class="swiper-pagination-switch"></span>
-                        <span class="swiper-pagination-switch"></span>
-                    </div>
-                </div>
+                        </section>
+                        <section class="main-content">
+                            <div class="row product-approve">
+                                <div class="large-12">
+                                    <hr class="section-hr-bottom-40px" />
+                                </div>
+                                <div class="medium-6 large-6 columns">
+                                    <h1 class="product-approve-title">权威认证</h1>
+                                    <p>我们的产品经过<a>CCIC（中国检验认证集团）</a>认证，对“鉴珍尚品燕窝”的燕窝产地、生产加工、包装运输等各工序进行监控管理，秉持鉴别珍品，崇尚品质。</p>
+                                </div>
+                                <div class="medium-6 large-6 columns">
+                                    <a href="#" title="点击查看原图"><img src="/static/img/approve.png"></a>
+                                </div>
+                            </div>
+                        </section>
+                        <div class=""></div>
             </div>
         </div>
     </div>
 
     <script type="text/javascript">
-        $(function(){
-            var mySwiper = $('.swiper-container').swiper({
-                mode: 'vertical',
-                pagination: '.pagination',
-                paginationClickable: true,
-                mousewheelControl: true,
-                //freeMode: true,
-                //freeModeFluid: true,
-                updateFormElements: true,
-            });
-        })
         $(document).foundation();
     </script>
 </body>
